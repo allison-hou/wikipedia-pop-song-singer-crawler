@@ -10,9 +10,8 @@ import time
 options = Options()             
 options.binary_location = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
 webdriver_path = 'C:\\Users\\hou\\Desktop\\allison_code\\python\\chromedriver.exe'
-driver = webdriver.Chrome(executable_path=webdriver_path, options=options)
-
-something = driver.get('https://en.wikipedia.org/wiki/Ruel_(singer)')
+WIKI_URL = 'https://en.wikipedia.org/wiki/Ruel_(singer)'
+something = driver.get(WIKI_URL)
 
 # time.sleep(5)
 
