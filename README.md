@@ -21,7 +21,6 @@ driver.find_element(BY.CSS_SELECTOR, “.nickname”)
 再以歌手圖片為例，它就不像歌手名稱，帶有一個頁面上只出現過一次的 class。
 所以經過觀察後，我使用了比較複雜的 CSS selector：”a.image img” (意思是「帶有 image 這個 class 的 a 元素裡面的 img 元素」)，這樣便只會選到一張圖片。
 選擇到了我們要的元素之後，就可以把元素的文字內容或是任何attribute讀取出來。
-
 例如，要讀取裝有歌手名稱的 div 元素的文字內容，我使用了：
 singer_name = driver.find_element(BY.CSS_SELECTOR, ”.nickname”).text 
 
