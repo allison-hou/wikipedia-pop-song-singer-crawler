@@ -13,6 +13,7 @@
 ## 程式設計理念與邏輯過程
 這個專案我使用了 Selenium 套件，它的一個主要功能是能直接使用CSS selector選擇HTML元素，然後讀取元素的內容。有了這個套件，就不用自己寫複雜難懂的字串處理規則。
 在維基百科的案例中，每個歌手資訊欄位我們都可以找出一些它特有的 CSS selector組合。以歌手名稱為例，它總是放在一個帶有 “nickname” 這個class 的 div 元素中，而且這個 class 不會出現在頁面中其他地方。因此，我們可以用 ".nickname”這個 CSS selector (意思就是帶有nickname這個class的元素) 直接找出這個歌手名稱的欄位。
+
 對應的程式碼如下：
 driver.find_element(BY.CSS_SELECTOR, “.nickname”) 
 
