@@ -27,7 +27,6 @@ singer_name = driver.find_element(BY.CSS_SELECTOR, ”.nickname”).text
 
 最後歌手名字就會存在 singer_name 變數裡面。而要讀取圖片的網址，則要讀取 img 元素的 src attribute，如下：
 picture = driver.find_element(BY.CSS_SELECTOR, “a.image img”) picture_url = picture.get_attribute(‘src’)
-
 有了圖片網址，我們就可以下載到電腦上 (例如用Python requests 套件)。
 
 
